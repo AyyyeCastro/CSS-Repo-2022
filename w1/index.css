@@ -13,6 +13,7 @@ body  /* self explanatory */
 #footer /* self explanatory */ 
 {
    text-align: center;
+   color: whitesmoke; /* font color in footer. */ 
 }
 
 div /* Applies spacing and styling to all div contents on the page */ 
