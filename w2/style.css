@@ -1,0 +1,158 @@
+/* Design is/was inspired from Apple.com, while keeping the "biography" theme for the assignment. */ 
+
+/* I hated how the gradients looked, so I used a background image onto the page called "Photos", for the assignment! */ 
+.bg-img
+{
+   background-image: url("https://i.pinimg.com/originals/aa/ed/09/aaed09359bcca1262f923b1c3519eab4.jpg");
+   background-color: #cccccc;
+   height: 100%;
+   width: 100%;
+   background-position: center;
+}
+
+body, h1
+{
+   font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue';
+} 
+
+/* I don't like the way the borders looked with the minimal theme of the website, so I just blended it in with the background color. 
+It's here for the assignment requirement though! */ 
+.border 
+{
+   border: 1px solid #e0e0e0;
+}
+
+h2
+{
+   text-align: center; 
+   font-family: Montserrat, sans-serif;
+}
+
+/* Sorry ahead of time for the terrible tabbing. I made this while working in between MacOS and Windows, and i think the resolution scaling difference made everything go 
+poop. Will make extra time next assignment to make sure this is formatted better, before submitting.*/ 
+
+   html, body 
+      {
+         margin: 0;
+         height: 100%;
+      }
+
+   body {background-color: #e0e0e0;
+       display: grid;
+       grid-gap: 0px;
+       grid-template-columns: 1fr;
+       grid-template-areas: "main" "footer";
+       grid-template-rows: 1fr 80px;
+                                   }
+
+   main {
+       background-color: #e0e0e0;
+       grid-area: main;
+                       }
+   footer {
+       grid-area: footer;
+       background-color: #d1d0d0;
+       color: rgb(68, 67, 67);
+       text-align: center;
+                           }
+
+   html {
+       scroll-behavior: smooth;}
+
+   #nav {
+       position: fixed;
+       width: 100%;
+       list-style-type: none;
+       margin: 0px;
+       padding: 0;
+       overflow: hidden;
+       background-color: rgb(243, 243, 243);
+       box-shadow: 0 2px 10px 0 rgba(9, 10, 10, 0.192);}
+   
+   .links {
+       float: left}
+
+   /* selected link blink color */
+   li a:active {
+       color: rgb(78, 168, 112)
+                   }
+
+   
+   li a:visited 
+   {
+   color: rgb(58, 122, 83);
+   }                
+
+
+   li a {
+       display: block;
+       color: rgb(51, 51, 51);
+       text-align: center;
+       padding: 15px 40px;
+       text-decoration: none;
+       }
+
+   li a:hover {
+       background-color: rgb(88, 88, 88, 0.295);}
+
+   #header{
+       padding: 1px;
+       background-color: rgb(75, 146, 103);
+       font-size: 30px;
+       color: rgb(236, 236, 236);
+       text-align: center;}
+
+   #logo {  
+       width: 3%}
+
+
+   /* THE BELOW ELEMENTS WILL NOT BE THE SAME ON EVERY PAGE. */
+   #first-container{
+       padding: 35px;
+       font-size: 16px;}
+
+   #second-container{
+       padding: 35px;
+       font-size: 16px;
+       }
+
+   .center {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 40%;
+       border: 4px solid #555;
+       }
+
+/*******************
+ Author notes for keeping track of tasks, reader may ignore this portion.
+
+1. Use no more than two main colors plus black, white and gray ✅
+>. One color for highlights ✅
+
+--- Green, and gray are the main colors. Various shades of these are used throughout. 
+
+2. Choose one or two fonts for your design and use various font-sizes ✅
+> Use either at least one web-font or Google font for the main title or headings. ✅
+
+-- Segoe UI for body and main title; Montserrat for h2 headers. 
+
+3.Use borders to separate areas instead of <hr> tags. ✅
+> Use border, border-bottom or border-top  ✅
+
+-- Borders used for those with a class of "borders". 
+
+4.Use at least one gradient or background image in your design  ✅
+> Background images should be used for decoration only.  ✅
+
+-- Bg image used in "photos.html" page. 
+
+5. Use an external style-sheet  ✅
+> Use at least one tag selector ✅
+> Use at least one class ✅
+> Use at least one id ✅
+> Style the a:link, a:visited and a:hover
+
+6.Center at least one part of your page ✅
+> DO NOT center paragraphs or lists.
+*******************/ 
