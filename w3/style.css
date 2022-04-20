@@ -1,0 +1,109 @@
+body, h1
+{
+   font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue';
+} 
+
+body
+{
+   height: 100%;
+   background-color: #414141;
+   display: grid;
+   grid-gap: 0px;
+   grid-template-columns: 1fr;
+   grid-template-areas: "main" "footer";
+   grid-template-rows: 1fr 80px;
+}
+
+main{
+   grid-area: main;
+   height: 100%;
+}
+
+h2
+{
+   background-color: rgb(87, 185, 126);
+   color: #414141;
+}
+
+footer 
+{
+   margin: 100px;
+   grid-area: footer;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   box-sizing: border-box; 
+   text-decoration: none;
+}
+
+
+/*************************************************************************/
+
+.bio-h2, .school-h2, .hob-h2
+{
+   color: #414141;
+   padding: 20px;
+   margin: -15px;
+}
+
+
+.hide /* Show or hide a div with this class. View index.html for more. */
+{
+   display:none
+}
+
+/*************************************************************************/
+#center
+{
+   text-align: center;
+}
+
+#header
+{
+   padding: 1px;
+   margin: 5px;
+   background-color: rgb(87, 185, 126);
+   font-size: 20px;
+   color: #414141;
+   text-align: center;
+}
+
+#div1 
+{
+   margin: 5px;
+   padding: 15px;
+   background-color: white;
+   box-sizing: border-box;
+}
+
+#div2 /* for bg image, PLACE BEFORE DIV2 CONTAINER STYLING. */ 
+{
+   background-image: url("images/cool-bg2.jpg");
+   height: 100%;
+   width: 100%;
+   background-position: center;
+   overflow: hidden;
+}
+
+#div2 /* FOR THE CONTAINER ITSELF. OVER-RIDES BG-IMG HEIGHT/WIDTH.. PROBABALY NOT GOOD PRACTICE?? */ 
+{
+   margin: 5px;
+   float: left;
+   width: 70%;
+   height: 30%;
+   padding: 15px;
+   background-color: white;
+   box-sizing: border-box;
+ }
+
+ 
+ #div3 
+ {
+   margin: 5px;
+   float: right;
+   width: 28%;
+   height: 30%;
+   padding: 15px;
+   background-color: white;
+   box-sizing: border-box; 
+ }
+
