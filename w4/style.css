@@ -1,0 +1,228 @@
+
+html, body{
+   margin:0;
+   height:100%;
+   display: flex;
+   flex-direction: column;
+}
+
+#container{
+   width:1820px;
+   display: flex;
+   flex-direction: column;
+}
+
+header{
+   display: flex;
+   flex-direction: column;
+   width:1820px;
+   height: 100px;
+   background-color:black;
+}
+
+header h1{
+    float:left;
+    margin-top:35px;
+    margin-left: 20px;
+    color: darkred;
+    font-family: 'Teko', sans-serif;
+    font-size: 48px;
+}
+.soc1{
+   position: absolute;
+   top: 20px;
+   left: 1560px;
+   height: 60px;
+   width: 60px;
+}
+.soc2{
+   position: absolute;
+   top: 20px;
+   left: 1630px;
+   height: 60px;
+   width: 60px;
+}
+.soc3{
+   position: absolute;
+   top: 20px;
+   left: 1700px;
+   height: 60px;
+   width: 60px;
+}
+main{
+    box-sizing:border-box;
+    float:left;
+    width:1820px;
+}
+main .left{
+    width:1460px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#282828;
+}
+main .right{
+    box-sizing:border-box;
+    width:360px;
+    background-color:#393939;
+    min-height:918px;
+}
+
+#img{
+    float:left;
+    background-image: url(images/BANNER.jpg);
+    width:1420px;
+    height:388px;
+    background-color:yellow;
+    margin:0 0 20px 20px;
+}
+.mod1
+{
+    float:left;
+    width:700px;
+    min-height:481px;
+    background-color:#393939;
+    margin:0px 0px 20px 20px;
+    border-top: 3px solid red;
+}
+
+.mod2
+{
+    float:right;
+    width:700px;
+    min-height:481px;
+    background-color:#393939;
+    margin:-504px 0px -20px 740px;
+    border-top: 3px solid red;
+}
+
+.left{
+float:left;
+}
+.right
+{
+float:right;
+}
+
+
+
+#scarry-man
+{
+   position: absolute;
+   top: 512px;
+   left: 20px;
+   height: 480px;
+   width: 310px;
+}
+
+#mod1-text
+{
+   position:absolute;
+   top: 525px;
+   left:351px;
+   color: white;
+   height: 216px;
+   width: 349px;
+   font-size: 18px;
+}
+#amazon-link
+{
+   position:absolute;
+   top: 824px;
+   left:500px;
+   height: 216px;
+   width: 349px;
+   font-size: 18px;
+}
+#mod1-inner-text
+{
+   color: white;
+   position: absolute;
+   font-size: 72px;
+   top: 805px;
+   left:500px;
+}
+#blue-ray
+{
+   position: absolute;
+   top: 824px;
+   left: 351px;
+}
+
+#mod2-text
+{
+   position:absolute;
+   top: 754px;
+   left:751px;
+   color: white;
+   height: 195px;
+   width: 676px;
+   font-size: 25px;
+}
+
+#scarry-flag
+{
+   position: absolute;
+   top: 520px;
+   left: 751px;
+   height: 229px;
+   width: 641px;
+}
+
+#mod3-text
+{
+   color: white;
+   height: 385px;
+   width: 275px;
+   font-size: 18px;
+   position: absolute;
+   top: 370px;
+   right: 255px;
+}
+
+#scarry-sign
+{
+   position: absolute;
+   top: 120px;
+   right: 232px;
+   height: 234px;
+   width: 325px;
+
+}
+
+#scarry-water
+{
+   position: absolute;
+   top: 820px;
+   right: 227px;
+
+}
+h2
+{
+   color: red;
+   border-bottom: red solid 2px;
+   text-align: center;
+   font-size: 25px;
+   font-family: 'Rock Salt', cursive;
+}
+
+footer{
+    height:60px;
+    clear:both;
+    background-color:black;
+    color: gray;
+    font-size: 12px;
+}
+
+#foot-text
+{
+   position:absolute;
+   bottom: -65px;
+   left: 20px;
+}
+
+
+b
+{
+   color: red;
+}
