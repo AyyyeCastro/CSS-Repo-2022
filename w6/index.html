@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7a790d5aa6.js" crossorigin="anonymous"></script> <!-- Bring dem fonts-->
+    <link rel="stylesheet" href="style.css"> <!-- Bring the style-->
+    <title>Not Visual Studio Code</title>
+</head>
+<body>
+    <!-- Author notes: 2022.05.02 PM 9:25 VER 1.0
+        1. "Week 6 Assignment" title is still needed in center of website.
+        2. Tab font and icons needs to be positioned correctly. 
+        3. Navigation tab does not properly apply border-bottom, need to figure out why. Flex container?
+        4. Nav is unable to set "min-width" of 144px w/o breaking #tray button. why? .hidden may need to be configured?
+    -->
+    <main>
+        <header>
+            <a href="#" class="resources1">File</a>
+            <a href="#" class="resources2">Edit</a>
+            <a href="#" class="resources3">Help</a>
+        </header>
+        <section> 
+            <aside>
+                <ul> <!-- Put the button links into a list in order to easily manipulate their position. IDK if there's a better way, but this is... a way...-->
+                    <li><a href="#" id="tray"  class="buttons"><i class="fa-solid fa-box-archive fa-2xl" class="tray-icon"></i></a></li>
+                    <li><a href="#" id="tiles" class="buttons"><i class="fa-solid fa-table-cells-large fa-2xl"></i></a></li>
+                    <li><a href="#" id="me" class="buttons"><i class="fa-solid fa-trash-can fa-2xl"></i></a></li>
+                </ul>
+            </aside>
+            <nav>
+                <details id ="file-details">
+                    <summary>Files</summary>
+                    <!-- <i class="fa-solid fa-angle-down"></i>  
+                    down arrow icon for the File title... May or may not apply... We'll find out..-->
+                    <ul>
+                        <li><i class="fa-regular fa-file fa-lg"></i> File 1</li> <!-- Gives the file menu icons.-->
+                        <br>
+                        <li><i class="fa-regular fa-file fa-lg"></i> File 2</li>
+                        <br>
+                        <li><i class="fa-regular fa-file fa-lg"></i> File 3</li>
+                        <br>
+                        <li><i class="fa-regular fa-file fa-lg"></i> File 4</li>
+                    </ul>          
+                </details>
+                <details id="other-details">
+                    <summary>Other</summary>
+                    <ul>
+                        <li><i class="fa-solid fa-fire-flame-curved"></i> Stuff 1</li> <!-- Gives the file menu icons.-->
+                        <br>
+                        <li><i class="fa-solid fa-fire-flame-curved"></i> Stuff 2</li> <!-- Gives the file menu icons.-->
+                        <br>
+                    </ul>
+                </details>
+            </nav>
+            <div id="content">
+                <div id="tabs">
+                    <a href="#" id ="start-tab" class="tab-buttons"><i class="fa-solid fa-plane-up fa-xs"></i> Tab 1</a>
+                    <a href="#" class="tab-buttons"><i class="fa-solid fa-plane-up fa-xs"></i> Tab 2</a>
+                    <a href="#" class="tab-buttons"><i class="fa-solid fa-plane-up "></i> Tab 3</a>
+                </div>
+                <div id="breadcrumbs">
+                    <a href="#">SE 137</a> >
+                    <a href="#">Week 6</a> >
+                    <a href="#">Homework</a> >
+                    <a href="#">Tab 1</a>
+                </div>
+                <textarea></textarea>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
