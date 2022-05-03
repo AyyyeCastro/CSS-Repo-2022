@@ -27,14 +27,16 @@ section{ /* Causes the nav bar to extend slightly, when hidden */
     justify-content: flex-start;
 }
 aside{
+    display: flex;
+    flex-direction: column;
     min-width:45px;
-    min-height: 730px;
+    height: 100%;
     background-color:#515151;
 }
 
 nav{
     width:144px;
-    min-height: 730px;
+    height: 100%;
     background-color:#373737;
     transition:width 1s;
     display:flex;
@@ -126,11 +128,12 @@ summary{
         border:none;
         outline:none;
         background-color:#060606;
-        color:white;
+        color:rgb(233, 66, 66);
     }
 footer{
     min-height:16px;
     background-color:#0254A0;
+    width: 100%;
 }
 
 .hidden{
@@ -184,18 +187,20 @@ padding: 5px; /* Gives the list the verticle alignment */
     text-decoration: none; /* removes ugly purple edges, due to the nature of links */
 }
 
-#me /* trash can icon */
+#me
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 835px;
+    margin-top: 670px;
     margin-left: 5px;
     margin-right: 5px;
     height: 32px;
     width: 26px;
     text-decoration: none; /* removes ugly purple edges, due to the nature of links */
 }
+
+
 
 .fa-file, .fa-box-archive, .fa-table-cells-large, .fa-fire-flame-curved, .fa-trash-can
 {
