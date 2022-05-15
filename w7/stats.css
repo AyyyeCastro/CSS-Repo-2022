@@ -1,0 +1,103 @@
+
+@media (max-width: 1920px) and (min-width: 1001px)
+{
+  body
+  {
+    background-color: RED;
+    font-size: 1em; 
+    transition: all 1s;
+  }
+
+  h1{
+    font-size:1.5em; /* 1= 100%. */
+    color: white;
+  }
+
+  .header, .stat
+    {font-size: 1em;
+    color: red}
+
+
+
+  .weenie-stat, .weenie-header
+    {display: none;}
+
+}
+/*********************************************/
+@media (max-width: 1000px) and (min-width: 501px)
+{
+  body
+  {
+    background-color: rgb(241, 181, 68);
+    font-size: 1em
+    transition: all 1s;
+  }
+
+  h1
+  {
+    font-size:1.5em; /* 1= 100%. */
+    color: rgb(71, 61, 61);
+  }
+
+  .header, .stat
+    {display: none;}
+  
+  .weenie-header, .weenie-stat
+    {font-size: 1em;
+    color: rgb(192, 145, 57);}
+
+  .weenie-stat
+    {display: none;}
+
+}
+
+/*********************************************/
+@media (max-width: 500px)
+{
+  body
+  {
+    background-color: rgb(214, 214, 55);
+    font-size: 1.25em;
+    transition: all 1s;
+  }
+
+  h1{
+    font-size:2em; /* 1= 100%. */
+    color: white;
+  }
+
+  .weenie-header, .weenie-stat
+  {font-size: 1.5em;
+   color: rgb(214, 214, 55);}
+
+  .weenie-stat
+  {display: none;}
+
+  .header, .stat
+  {display: none;}
+}
+  
+
+
+body
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Rock Salt', cursive;
+}
+
+html, body{
+    margin:0;
+    height:100vh;
+}
+
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+ td{
+    border-bottom:1px solid black;
+    font-family: 'Teko', sans-serif;
+    background-color: white;
+}
