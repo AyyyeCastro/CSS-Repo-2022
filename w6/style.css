@@ -18,21 +18,46 @@ main{
 }
 header{
     background-color:#515151;
-    min-height:24px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: #333;
+    height: 30px;
+    width: 100%;
 }
+
+.resources1
+{
+    margin: 5px 20px 5px;
+    text-decoration: none;
+    color: #B1B1B1;
+}
+.resources2
+{
+    margin: 5px 25px 5px;
+    text-decoration: none;
+    color: #B1B1B1;
+}
+.resources3
+{
+    margin: 5px 0px 0px;
+    text-decoration: none;
+    color: #B1B1B1;
+}
+
 section{ /* Causes the nav bar to extend slightly, when hidden */ 
     min-height:100%;
     background-color:burlywood;
     display:flex;
     justify-content: flex-start;
 }
+
 aside{
     display: flex;
-    flex-direction: column;
     min-width:45px;
-    height: 100%;
     background-color:#515151;
-}
+}   
 
 nav{
     width:144px;
@@ -133,21 +158,21 @@ summary{
 footer{
     min-height:16px;
     background-color:#0254A0;
-    width: 100%;
+    display: flex;
 }
 
 .hidden{
-    width:0;
-    padding:0;
+    width:0%;
+    padding:0%;
     transition:width 1s;
 }
 
 /*********************************/ 
 
-ul
+.ul
 {
-list-style-type: none; /* removes the list's bullet points. */ 
-padding: 5px; /* Gives the list the verticle alignment */ 
+    list-style-type: none; /* removes the list's bullet points. */ 
+    padding: 5px; /* Gives the list the verticle alignment */ 
 }
 
 #help
@@ -162,41 +187,37 @@ padding: 5px; /* Gives the list the verticle alignment */
     list-style-type: none; /* removes the list's bullet points. */ 
 }
 
+
+
+/* 😠😠😠😠😠😠😠😠😠😠😠😠😡😡😡😡😡😡😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠 */ 
+.butts 
+{
+    list-style-type: none; /* removes the list's bullet points. */ 
+    padding: 5px;
+    position: relative;
+}
+
 #tray
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 32px;
-    width: 26px;
+    position: absolute;
+    top: 1%;
+    left: 5px;
     text-decoration: none; /* removes ugly purple edges, due to the nature of links */
+    
 }
 #tiles
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 32px;
-    width: 26px;
+    position: absolute;
+    top: 6%;
+    left: 5px;
     text-decoration: none; /* removes ugly purple edges, due to the nature of links */
 }
 
-#me
+#trash
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 450px;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 32px;
-    width: 26px;
+    position: absolute;
+    top: 95%;
+    left: 7px;
     text-decoration: none; /* removes ugly purple edges, due to the nature of links */
 }
 
@@ -212,4 +233,5 @@ padding: 5px; /* Gives the list the verticle alignment */
 .fa-file:hover, .fa-box-archive:hover, .fa-table-cells-large:hover, .fa-fire-flame-curved:hover, .fa-trash-can:hover
 {
     opacity: 0.70;
+    
 }
