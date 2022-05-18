@@ -1,0 +1,161 @@
+/* tutorial: https://www.youtube.com/watch?v=wARbgs5Fmuw */
+/* This allows responsive font scaling to be easily manipulated with a default set (mobile) and one Desktop scaling w/ Media query. */ 
+:root 
+{
+   --ff-body: 'Chakra Petch', sans-serif;
+
+   /* Clamp prevents browsers from over/under sizing from scaling. 
+   clam(min rem, set vw + amount, max rem) */
+   --fs-xl:clamp(3rem, 16vw + 1rem, 10rem);    /* Header font */ 
+   --fs-lg:2.3rem;    /* Body title font */ 
+   --fs-md:1.5rem;     /* Main body font */ 
+   --fs-sm:1.5rem;   /* Subtitle font */
+}
+/****************************************/
+/* Min width has a "mobile first" mentality */ 
+@media (min-width:50em)
+{
+   :root 
+   {
+      --fs-xl: clamp(6rem, 16vw + 1rem, 10rem); /* Used for Welcome screen 'ANDREW CASTRO' */  
+      --fs-lg:2.1rem;    /* Body title font */ 
+      --fs-md:1.2rem;     /* Main body font */ 
+      --fs-sm:1.5rem;   /* Subtitle font */
+   }
+}
+
+/************************/
+/* Generic Stuff */
+html,body {
+   height: 100%;
+   width: 100%;
+   background-color: #ff0000;
+ }
+
+ body
+ {
+   height: 100%;
+ }
+
+/************************/
+ /* WELCOME SECTION */
+.navbar-custom {
+   background-color: #454851;
+   color: #BDCBA4;
+   font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Viewport height (or vh) is INCREDIBLY IMPORTANT for this welcome screen. 
+It will scale this container to always be 100% of the browsers' AVAILABLE viewing, no matter the browser size. 
+Tutorial: https://youtu.be/_sgF8I-Q1Gs */ 
+.welcome-custom{
+   background-color: #BDCBA4;
+   height: 100vh;
+   /* To the middle you go */ 
+   padding: 330px;
+}
+
+.andrew-custom
+{
+   color: white;
+   font-family: 'Righteous', cursive;
+   transition: all 1s;
+   font-size: var(--fs-xl);
+   text-align: center;
+}
+
+/************************/
+/* HERO SECTION ABOVE Resume+AboutMe */
+.hero-xiv-custom
+{
+   background-image: url(images/hero-banner-full-ffxiv.png);
+   background-size: cover;
+   background-position: top center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   /* 100vh = 100% of the available height */ 
+   height: 40vh;
+   border-top: 5px solid white;
+   border-bottom: 5px solid white;
+   background-color: #ff0000;
+   background-repeat: none;
+}
+
+/************************/
+/* Resume Section */ 
+.rounded-circle /* Remember; mobile first. Media query for the desktop. */
+{
+   height: 145px;
+   width: 145px;
+   position: relative;
+   top: -50px;
+   background-position: top center;
+   background-attachment:static;
+   transition: all 1s;
+   border: solid 3px white;
+}
+   @media (min-width:70em) 
+      {
+         .rounded-circle
+         {
+            height: 165px;
+            width: 165px;
+            position: relative;
+            top: -50px;
+            background-position: top center;
+            background-attachment:static;
+            border: solid 3px white;
+         }
+      }
+
+.entire-resume-custom
+{
+   background-color: white;
+   color: #7A7766;
+}
+
+/* the text inside */
+.resume-custom
+{
+   font-size: var(--fs-md);
+   padding: 5px;
+}
+
+#h2, .h2-custom
+{
+   color: #BDCBA4;
+}
+
+/************************/
+/* ACROSS MULTIPLE SCENARIOS */ 
+
+/* any bold text in body*/
+.bold-custom
+{
+   font-family: 'Righteous', cursive;
+}
+
+/* All h2 headers. */ 
+.h2-custom
+{
+   font-family: 'Righteous', cursive;
+   font-size: var(--fs-lg);
+}
+/* All h3 headers. */ 
+.h3-custom
+{
+   font-family: 'Righteous', cursive;
+   font-size: var(--fs-sm);
+}
+
+/************************/
+/* About-Me Section */ 
+.about-custom
+{
+   color: #fff;
+   background-color: #BDCBA4;
+   font-size: var(--fs-md);
+   padding: 35px;
+}
+
+
