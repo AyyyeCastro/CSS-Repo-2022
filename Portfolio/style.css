@@ -198,3 +198,9 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    background-color: #ff0000;
    background-repeat: none;
 }
+
+.footer-custom
+{
+   background-color: #454851;
+   color: rgb(167, 167, 167);
+}
