@@ -8,7 +8,7 @@
    clam(min rem, set vw + amount, max rem) */
    --fs-xl:clamp(3rem, 16vw + 1rem, 10rem);    /* Header font */ 
    --fs-lg:1.8rem;    /* Body title font */ 
-   --fs-md:1.5rem;     /* Main body font */ 
+   --fs-md:1.4rem;     /* Main body font */ 
    --fs-sm:1.4rem;   /* Subtitle font */
 }
    /* Min width has a "mobile first" mentality */ 
@@ -110,6 +110,14 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
          }
       }
 
+@media (max-width:40em) 
+{
+   .content-heading    
+   {
+      text-align: center;
+   }
+}  
+
 .entire-resume-custom
 {
    background-color: white;
@@ -162,7 +170,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 .about-custom
 {
    font-size: var(--fs-md);
-   padding: 45px;
+   min-padding: 45px;
 }
 
 /************************/
@@ -203,4 +211,5 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 {
    background-color: #454851;
    color: rgb(167, 167, 167);
+   text-align: center;
 }
