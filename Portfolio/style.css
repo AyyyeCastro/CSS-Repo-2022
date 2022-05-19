@@ -7,23 +7,23 @@
    /* Clamp prevents browsers from over/under sizing from scaling. 
    clam(min rem, set vw + amount, max rem) */
    --fs-xl:clamp(3rem, 16vw + 1rem, 10rem);    /* Header font */ 
-   --fs-lg:2.3rem;    /* Body title font */ 
+   --fs-lg:1.8rem;    /* Body title font */ 
    --fs-md:1.5rem;     /* Main body font */ 
-   --fs-sm:1.5rem;   /* Subtitle font */
+   --fs-sm:1.4rem;   /* Subtitle font */
 }
-/****************************************/
-/* Min width has a "mobile first" mentality */ 
-@media (min-width:50em)
-{
-   :root 
+   /* Min width has a "mobile first" mentality */ 
+   @media (min-width:40em)
    {
-      --fs-xl: clamp(6rem, 16vw + 1rem, 10rem); /* Used for Welcome screen 'ANDREW CASTRO' */  
-      --fs-lg:2.1rem;    /* Body title font */ 
-      --fs-md:1.2rem;     /* Main body font */ 
-      --fs-sm:1.5rem;   /* Subtitle font */
+      :root 
+      {
+         --fs-xl: clamp(6rem, 16vw + 1rem, 10rem); /* Used for Welcome screen 'ANDREW CASTRO' */  
+         --fs-lg:2.1rem;    /* Body title font */ 
+         --fs-md:1.2rem;     /* Main body font */ 
+         --fs-sm:1.5rem;   /* Subtitle font */
+      }
    }
-}
 
+/****************************************/
 /************************/
 /* Generic Stuff */
 html,body {
@@ -47,10 +47,13 @@ html,body {
 
 /* Viewport height (or vh) is INCREDIBLY IMPORTANT for this welcome screen. 
 It will scale this container to always be 100% of the browsers' AVAILABLE viewing, no matter the browser size. 
+
+MIN-HEIGHT is also INCREDIBLY IMPORTANT so that the text inside this container doesn't OVERFLOW when the browser gets small.
+The height will flex above 40vh when needed for browser size. 
 Tutorial: https://youtu.be/_sgF8I-Q1Gs */ 
 .welcome-custom{
    background-color: #BDCBA4;
-   height: 100vh;
+   min-height: 100vh;
    /* To the middle you go */ 
    padding: 330px;
 }
@@ -59,7 +62,6 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 {
    color: white;
    font-family: 'Righteous', cursive;
-   transition: all 1s;
    font-size: var(--fs-xl);
    text-align: center;
 }
@@ -150,12 +152,49 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 
 /************************/
 /* About-Me Section */ 
-.about-custom
+
+.entire-about-custom
 {
    color: #fff;
    background-color: #BDCBA4;
-   font-size: var(--fs-md);
-   padding: 35px;
 }
 
+.about-custom
+{
+   font-size: var(--fs-md);
+   padding: 45px;
+}
 
+/************************/
+/* Hero Cherry1 Section */ 
+.hero-cherry1-custom
+{
+   background-image: url(images/cherry1.png);
+   background-size: cover;
+   background-position: top center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   /* 100vh = 100% of the available height */ 
+   min-height: 29vh;
+   background-color: #ff0000;
+   background-repeat: none;
+}
+
+.tangled-custom{
+   background-color: #BDCBA4;
+   min-height: 40vh;
+   padding: 75px;
+   /* To the middle you go */ 
+}
+
+.hero-cherry2-custom
+{
+   background-image: url(images/cherry2.png);
+   background-size: cover;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   /* 100vh = 100% of the available height */ 
+   min-height: 29vh;
+   background-color: #ff0000;
+   background-repeat: none;
+}
