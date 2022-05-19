@@ -24,6 +24,18 @@
    }
 
 /****************************************/
+.scroll-parent1
+{
+   scroll-snap-type: mandatory;
+   scroll-snap-points-y: repeat(300px);
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-point1
+{
+   scroll-snap-align: start;
+}
+
 /************************/
 /* Generic Stuff */
 html,body {
