@@ -22,20 +22,6 @@
          --fs-sm:1.5rem;   /* Subtitle font */
       }
    }
-
-/****************************************/
-.scroll-parent1
-{
-   scroll-snap-type: mandatory;
-   scroll-snap-points-y: repeat(300px);
-  scroll-snap-type: y mandatory;
-}
-
-.scroll-point1
-{
-   scroll-snap-align: start;
-}
-
 /************************/
 /* Generic Stuff */
 html,body {
@@ -50,12 +36,15 @@ html,body {
  }
 
 /************************/
- /* WELCOME SECTION */
+ /* Navigation SECTION */
 .navbar-custom {
    background-color: #454851;
    color: #BDCBA4;
    font-family: 'Chakra Petch', sans-serif;
 }
+
+/************************/
+ /* WELCOME SECTION */
 
 /* Viewport height (or vh) is INCREDIBLY IMPORTANT for this welcome screen. 
 It will scale this container to always be 100% of the browsers' AVAILABLE viewing, no matter the browser size. 
@@ -63,13 +52,21 @@ It will scale this container to always be 100% of the browsers' AVAILABLE viewin
 MIN-HEIGHT is also INCREDIBLY IMPORTANT so that the text inside this container doesn't OVERFLOW when the browser gets small.
 The height will flex above 40vh when needed for browser size. 
 Tutorial: https://youtu.be/_sgF8I-Q1Gs */ 
-.welcome-custom{
-   background-color: #BDCBA4;
-   min-height: 100vh;
-   /* To the middle you go */ 
-   padding: 330px;
-}
 
+/* Background for welcome header */ 
+.welcome-custom{
+   min-height: 100vh;
+   /* To the middle you go... NOT GOOD PRACTICE...*/
+   padding: 330px;
+   background-image: url(images/welcome-bg.png);
+   background-size: cover;
+   background-position: bottom center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   background-repeat: none;
+   background-color: #ff0000;
+}
+/* Welcome text */
 .andrew-custom
 {
    color: white;
@@ -77,16 +74,15 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    font-size: var(--fs-xl);
    text-align: center;
 }
-
 /************************/
-/* HERO SECTION ABOVE Resume+AboutMe */
+/* HERO SECTION Character */
 .hero-xiv-custom
 {
-   background-image: url(images/hero-banner-full-ffxiv.png);
+   background-image: url(images/character-full.png);
    background-size: cover;
    background-position: top center;
    /* Keeps the image CENTER in a static position */ 
-   background-attachment:static;
+   background-attachment:fixed;
    /* 100vh = 100% of the available height */ 
    height: 40vh;
    border-top: 5px solid white;
@@ -94,9 +90,9 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    background-color: #ff0000;
    background-repeat: none;
 }
-
 /************************/
 /* Resume Section */ 
+/* Avatar*/ 
 .rounded-circle /* Remember; mobile first. Media query for the desktop. */
 {
    height: 145px;
@@ -121,7 +117,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
             border: solid 3px white;
          }
       }
-
+/* Name + Subtext near avatar */
 @media (max-width:40em) 
 {
    .content-heading    
@@ -172,17 +168,23 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 
 /************************/
 /* About-Me Section */ 
-
 .entire-about-custom
 {
    color: #fff;
+   background-image: url(images/about-me-bg3.png);
+   background-size: cover;
+   background-position:  top center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:fixed;
+   background-repeat: none;
    background-color: #BDCBA4;
 }
 
+/* Text inside */ 
 .about-custom
 {
    font-size: var(--fs-md);
-   min-padding: 45px;
+   padding: 45px;
 }
 
 /************************/
@@ -199,14 +201,15 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    background-color: #ff0000;
    background-repeat: none;
 }
-
+/************************/
+/* Featured Project Section */ 
 .tangled-custom{
    background-color: #BDCBA4;
    min-height: 40vh;
    padding: 75px;
-   /* To the middle you go */ 
 }
-
+/************************/
+/* Hero Cherry2 Section */ 
 .hero-cherry2-custom
 {
    background-image: url(images/cherry2.png);
@@ -218,7 +221,8 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    background-color: #ff0000;
    background-repeat: none;
 }
-
+/************************/
+/* Footer Section */ 
 .footer-custom
 {
    background-color: #454851;
