@@ -16,6 +16,7 @@
    {
       :root 
       {
+         
          --fs-xl: clamp(6rem, 16vw + 1rem, 10rem); /* Used for Welcome screen 'ANDREW CASTRO' */  
          --fs-lg:2.1rem;    /* Body title font */ 
          --fs-md:1.2rem;     /* Main body font */ 
@@ -37,10 +38,17 @@ html,body {
 
 /************************/
  /* Navigation SECTION */
-.navbar-custom {
+.navbar-custom 
+{
    background-color: #454851;
-   color: #BDCBA4;
    font-family: 'Chakra Petch', sans-serif;
+}
+.nav-link {
+   color: #BDCBA4 !important;
+   }
+.nav-link:hover
+{
+   color: #7A7766 !important;
 }
 
 /************************/
@@ -74,6 +82,23 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    font-size: var(--fs-xl);
    text-align: center;
 }
+.animate-bottom {
+   position: relative;
+   -webkit-animation-name: animatebottom;
+   -webkit-animation-duration: 2s;
+   animation-name: animatebottom;
+   animation-duration: s
+ }
+ @-webkit-keyframes animatebottom {
+   from { bottom:-100px; opacity:0 } 
+   to { bottom:0px; opacity:1 }
+ }
+ 
+ @keyframes animatebottom { 
+   from{ bottom:-100px; opacity:0 } 
+   to{ bottom:0; opacity:1 }
+ }
+ 
 /************************/
 /* HERO SECTION Character */
 .hero-xiv-custom
@@ -129,14 +154,16 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 .entire-resume-custom
 {
    background-color: white;
+   
    color: #7A7766;
 }
 
 /* the text inside */
 .resume-custom
 {
+   margin-top: -55px;
    font-size: var(--fs-md);
-   padding: 5px;
+   padding: 45px;
 }
 
 #h2, .h2-custom
@@ -200,6 +227,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    min-height: 29vh;
    background-color: #ff0000;
    background-repeat: none;
+
 }
 /************************/
 /* Featured Project Section */ 
@@ -208,6 +236,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    min-height: 40vh;
    padding: 75px;
 }
+
 /************************/
 /* Hero Cherry2 Section */ 
 .hero-cherry2-custom
@@ -229,3 +258,41 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    color: rgb(167, 167, 167);
    text-align: center;
 }
+
+/************************************************************************/
+/* ⚠️ FEATURED.HTML ------ DIFFERENT BRANCH. ⚠️ */ 
+
+
+/* Entire body */
+.body-custom{
+   min-height: 100vh;
+   background-color: #dfdfdf;
+   font-style: 'Chakra Petch', sans-serif;
+   color:#454851;
+}
+
+.devproc-custom
+{
+   padding: 45px;
+}
+
+#h2, .h2-custom2
+{
+   color: #454851;
+   text-align: center;
+}
+
+
+.carousel-item{
+   width:100%;
+   min-height: 60vh !important;
+   border: 20px solid #BDCBA4;
+   border-radius: 3px;
+ }
+ .carousel-caption
+ {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 5px #000000;
+    background-color: #45485115;
+    border-radius: 10px;
+ }
