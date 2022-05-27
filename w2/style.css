@@ -12,7 +12,7 @@
 
 body, h1
 {
-   font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue';
+    font-style: 'Chakra Petch', sans-serif;
 } 
 
 /* I don't like the way the borders looked with the minimal theme of the website, so I just blended it in with the background color. 
