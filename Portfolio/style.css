@@ -1,0 +1,298 @@
+/* tutorial: https://www.youtube.com/watch?v=wARbgs5Fmuw */
+/* This allows responsive font scaling to be easily manipulated with a default set (mobile) and one Desktop scaling w/ Media query. */ 
+:root 
+{
+   --ff-body: 'Chakra Petch', sans-serif;
+
+   /* Clamp prevents browsers from over/under sizing from scaling. 
+   clam(min rem, set vw + amount, max rem) */
+   --fs-xl:clamp(3rem, 16vw + 1rem, 10rem);    /* Header font */ 
+   --fs-lg:1.8rem;    /* Body title font */ 
+   --fs-md:1.4rem;     /* Main body font */ 
+   --fs-sm:1.4rem;   /* Subtitle font */
+}
+   /* Min width has a "mobile first" mentality */ 
+   @media (min-width:40em)
+   {
+      :root 
+      {
+         
+         --fs-xl: clamp(6rem, 16vw + 1rem, 10rem); /* Used for Welcome screen 'ANDREW CASTRO' */  
+         --fs-lg:2.1rem;    /* Body title font */ 
+         --fs-md:1.2rem;     /* Main body font */ 
+         --fs-sm:1.5rem;   /* Subtitle font */
+      }
+   }
+/************************/
+/* Generic Stuff */
+html,body {
+   height: 100%;
+   width: 100%;
+   background-color: #ff0000;
+ }
+
+ body
+ {
+   height: 100%;
+ }
+
+/************************/
+ /* Navigation SECTION */
+.navbar-custom 
+{
+   background-color: #454851;
+   font-family: 'Chakra Petch', sans-serif;
+}
+.nav-link {
+   color: #BDCBA4 !important;
+   }
+.nav-link:hover
+{
+   color: #7A7766 !important;
+}
+
+/************************/
+ /* WELCOME SECTION */
+
+/* Viewport height (or vh) is INCREDIBLY IMPORTANT for this welcome screen. 
+It will scale this container to always be 100% of the browsers' AVAILABLE viewing, no matter the browser size. 
+
+MIN-HEIGHT is also INCREDIBLY IMPORTANT so that the text inside this container doesn't OVERFLOW when the browser gets small.
+The height will flex above 40vh when needed for browser size. 
+Tutorial: https://youtu.be/_sgF8I-Q1Gs */ 
+
+/* Background for welcome header */ 
+.welcome-custom{
+   min-height: 100vh;
+   /* To the middle you go... NOT GOOD PRACTICE...*/
+   padding: 330px;
+   background-image: url(images/welcome-bg.png);
+   background-size: cover;
+   background-position: bottom center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   background-repeat: none;
+   background-color: #ff0000;
+}
+/* Welcome text */
+.andrew-custom
+{
+   color: white;
+   font-family: 'Righteous', cursive;
+   font-size: var(--fs-xl);
+   text-align: center;
+}
+.animate-bottom {
+   position: relative;
+   -webkit-animation-name: animatebottom;
+   -webkit-animation-duration: 2s;
+   animation-name: animatebottom;
+   animation-duration: s
+ }
+ @-webkit-keyframes animatebottom {
+   from { bottom:-100px; opacity:0 } 
+   to { bottom:0px; opacity:1 }
+ }
+ 
+ @keyframes animatebottom { 
+   from{ bottom:-100px; opacity:0 } 
+   to{ bottom:0; opacity:1 }
+ }
+ 
+/************************/
+/* HERO SECTION Character */
+.hero-xiv-custom
+{
+   background-image: url(images/character-full.png);
+   background-size: cover;
+   background-position: top center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:fixed;
+   /* 100vh = 100% of the available height */ 
+   height: 40vh;
+   border-top: 5px solid white;
+   border-bottom: 5px solid white;
+   background-color: #ff0000;
+   background-repeat: none;
+}
+/************************/
+/* Resume Section */ 
+/* Avatar*/ 
+.rounded-circle /* Remember; mobile first. Media query for the desktop. */
+{
+   height: 145px;
+   width: 145px;
+   position: relative;
+   top: -50px;
+   background-position: top center;
+   background-attachment:static;
+   transition: all 1s;
+   border: solid 3px white;
+}
+   @media (min-width:70em) 
+      {
+         .rounded-circle
+         {
+            height: 165px;
+            width: 165px;
+            position: relative;
+            top: -50px;
+            background-position: top center;
+            background-attachment:static;
+            border: solid 3px white;
+         }
+      }
+/* Name + Subtext near avatar */
+@media (max-width:40em) 
+{
+   .content-heading    
+   {
+      text-align: center;
+   }
+}  
+
+.entire-resume-custom
+{
+   background-color: white;
+   
+   color: #7A7766;
+}
+
+/* the text inside */
+.resume-custom
+{
+   margin-top: -55px;
+   font-size: var(--fs-md);
+   padding: 45px;
+}
+
+#h2, .h2-custom
+{
+   color: #BDCBA4;
+}
+
+/************************/
+/* ACROSS MULTIPLE SCENARIOS */ 
+
+/* any bold text in body*/
+.bold-custom
+{
+   font-family: 'Righteous', cursive;
+}
+
+/* All h2 headers. */ 
+.h2-custom
+{
+   font-family: 'Righteous', cursive;
+   font-size: var(--fs-lg);
+}
+/* All h3 headers. */ 
+.h3-custom
+{
+   font-family: 'Righteous', cursive;
+   font-size: var(--fs-sm);
+}
+
+/************************/
+/* About-Me Section */ 
+.entire-about-custom
+{
+   color: #fff;
+   background-image: url(images/about-me-bg3.png);
+   background-size: cover;
+   background-position:  top center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:fixed;
+   background-repeat: none;
+   background-color: #BDCBA4;
+}
+
+/* Text inside */ 
+.about-custom
+{
+   font-size: var(--fs-md);
+   padding: 45px;
+}
+
+/************************/
+/* Hero Cherry1 Section */ 
+.hero-cherry1-custom
+{
+   background-image: url(images/cherry1.png);
+   background-size: cover;
+   background-position: top center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   /* 100vh = 100% of the available height */ 
+   min-height: 29vh;
+   background-color: #ff0000;
+   background-repeat: none;
+
+}
+/************************/
+/* Featured Project Section */ 
+.tangled-custom{
+   background-color: #BDCBA4;
+   min-height: 40vh;
+   padding: 75px;
+}
+
+/************************/
+/* Hero Cherry2 Section */ 
+.hero-cherry2-custom
+{
+   background-image: url(images/cherry2.png);
+   background-size: cover;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   /* 100vh = 100% of the available height */ 
+   min-height: 29vh;
+   background-color: #ff0000;
+   background-repeat: none;
+}
+/************************/
+/* Footer Section */ 
+.footer-custom
+{
+   background-color: #454851;
+   color: rgb(167, 167, 167);
+   text-align: center;
+}
+
+/************************************************************************/
+/* ⚠️ FEATURED.HTML ------ DIFFERENT BRANCH. ⚠️ */ 
+
+
+/* Entire body */
+.body-custom{
+   min-height: 100vh;
+   background-color: #dfdfdf;
+   font-style: 'Chakra Petch', sans-serif;
+   color:#454851;
+}
+
+.devproc-custom
+{
+   padding: 45px;
+}
+
+#h2, .h2-custom2
+{
+   color: #454851;
+   text-align: center;
+}
+
+
+.carousel-item{
+   width:100%;
+   min-height: 60vh !important;
+   border: 20px solid #BDCBA4;
+   border-radius: 3px;
+ }
+ .carousel-caption
+ {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 5px #000000;
+    background-color: #45485115;
+    border-radius: 10px;
+ }

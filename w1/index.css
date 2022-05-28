@@ -1,0 +1,57 @@
+/* I had most of this styling done from Prof. Katie's first webpage assignment example, in intro to JS/HTMl. */ 
+
+.hide /* Show or hide a div with this class. View index.js for more. */
+{
+   display:none
+}
+
+body  /* self explanatory */ 
+{
+   background-color:rgb(243, 239, 239);
+}
+
+#footer /* self explanatory */ 
+{
+   text-align: center;
+   color: whitesmoke; /* font color in footer. */ 
+}
+
+div /* Applies spacing and styling to all div contents on the page */ 
+{ 
+   border:2px solid rgb(156, 150, 150);
+   padding:10px;
+   margin:5px;
+}
+
+#nav /* The navigation links at the top of the page. Applies a SPECIFIC background color; which will over-ride the body background. */ 
+{
+   background-color: rgb(68, 32, 199);
+   text-align:center;
+}
+
+#footer /* self explanatory - OVER-RIDES BODY BACKGROUND COLOR*/ 
+{
+   background-color: rgb(119, 119, 119);
+}
+
+a /* Specifically the TEXT within the Nav. */ 
+{
+   color: rgb(184, 179, 179);
+   text-decoration: none; 
+   font-size:18px;
+   margin-right:10px; 
+} 
+
+a:hover /* Style that applies ONLY when hovering over the TEXT within the Nav links */ 
+{
+   color:rgb(235, 230, 223);
+}
+
+#name /* h2 header name; Andrew Castro */ 
+{
+   text-align: center;
+}
+
+
+
+
