@@ -259,9 +259,9 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    text-align: center;
 }
 
-/************************************************************************/
-/* ⚠️ FEATURED.HTML ------ DIFFERENT BRANCH. ⚠️ */ 
 
+/************************************************************************/
+/* ⚠️ FEATURED.HTML ------ DIFFERENT PAGE. ⚠️ */ 
 
 /* Entire body */
 .body-custom{
@@ -270,7 +270,6 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    font-style: 'Chakra Petch', sans-serif;
    color:#454851;
 }
-
 .devproc-custom
 {
    padding: 45px;
@@ -281,11 +280,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    color: #454851;
    text-align: center;
 }
-
-
 .carousel-item{
-   width:100%;
-   min-height: 60vh !important;
    border: 20px solid #BDCBA4;
    border-radius: 3px;
  }
@@ -296,3 +291,25 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
     background-color: #45485115;
     border-radius: 10px;
  }
+
+
+
+
+
+
+/************************************************************************/
+/* ⚠️ PROJECTS.HTML ------ DIFFERENT PAGE. ⚠️ */ 
+
+.card-group
+{
+   padding: 15px;
+}
+.card
+{
+   margin: 35px;
+}
+.card-img-top
+{
+   max-height: 25vh;
+   border-bottom: 2px solid black;
+}
