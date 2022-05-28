@@ -1,0 +1,126 @@
+body, h1
+{
+   font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue';
+} 
+
+body
+{
+   height: 100%;
+   background-color: #414141;
+   display: grid;
+   grid-gap: 0px;
+   grid-template-columns: 1fr;
+   grid-template-areas: "main" "footer";
+   grid-template-rows: 1fr 80px;
+   font-size: 18px;
+}
+
+main{
+   grid-area: main;
+   height: 100%;
+}
+
+h2
+{
+   background-color: #A4D398;
+   color: #ffffff;
+   font-family: 'Freckle Face', cursive;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   font-size: 44px;
+}
+h1
+{
+   font-family: 'Freckle Face', cursive;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   color: #A4D398;
+   font-size: 40px;
+   margin: -12px;
+}
+
+footer 
+{
+   margin: 100px;
+   grid-area: footer;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   box-sizing: border-box; 
+   text-decoration: none;
+}
+
+
+/*************************************************************************/
+
+.bio-h2, .school-h2, .hob-h2
+{
+   padding: 20px;
+   margin: -15px;
+}
+
+
+.hide /* Show or hide a div with this class. View index.html for more. */
+{
+   display:none
+}
+
+/*************************************************************************/
+#center
+{
+   text-align: center;
+}
+
+#header
+{
+   padding: 1px;
+   margin: 5px;
+   height: 88px;
+   background-color: #ffffff;
+   font-size: 20px;
+   color: #ffffff;
+   text-align: center;
+}
+
+#div1 
+{
+   margin: 5px;
+   padding: 15px;
+   height: 453px;
+   background-color: white;
+   box-sizing: border-box;
+}
+
+#div2 /* for bg image, PLACE BEFORE DIV2 CONTAINER STYLING. */ 
+{
+   background-image: url("images/cool-bg2.jpg");
+   height: 400px;
+   width: 100%;
+   background-position: center;
+   overflow: hidden;
+   background-size: cover;
+   background-attachment:static;
+   background-repeat: none;
+}
+
+#div2 /* FOR THE CONTAINER ITSELF. OVER-RIDES BG-IMG HEIGHT/WIDTH.. PROBABALY NOT GOOD PRACTICE?? */ 
+{
+   margin: 5px;
+   float: left;
+   width: 70%;
+   padding: 15px;
+   background-color: white;
+   box-sizing: border-box;
+ }
+
+ 
+ #div3 
+ {
+   margin: 5px;
+   float: right;
+   width: 28%;
+   height: 400px;
+   padding: 15px;
+   background-color: white;
+   box-sizing: border-box; 
+ }
+

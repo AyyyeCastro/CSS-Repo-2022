@@ -1,0 +1,237 @@
+
+html, body{
+    margin:0;
+    height:100%;
+}
+body{
+    box-sizing:border-box;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    color: #B1B1B1;
+}
+main{
+    min-width:100%;
+    background-color:#515151;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color:#515151;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: #333;
+    height: 30px;
+    width: 100%;
+}
+
+.resources1
+{
+    margin: 5px 20px 5px;
+    text-decoration: none;
+    color: #B1B1B1;
+}
+.resources2
+{
+    margin: 5px 25px 5px;
+    text-decoration: none;
+    color: #B1B1B1;
+}
+.resources3
+{
+    margin: 5px 0px 0px;
+    text-decoration: none;
+    color: #B1B1B1;
+}
+
+section{ /* Causes the nav bar to extend slightly, when hidden */ 
+    min-height:100%;
+    background-color:burlywood;
+    display:flex;
+    justify-content: flex-start;
+}
+
+aside{
+    display: flex;
+    min-width:45px;
+    background-color:#515151;
+}   
+
+nav{
+    width:144px;
+    height: 100%;
+    background-color:#373737;
+    transition:width 1s;
+    display:flex;
+}
+
+.resources1
+{
+    text-decoration: none;
+    color: #B1B1B1;
+    margin-left: 45px;
+}
+.resources2, .resources3
+{
+    text-decoration: none;
+    color: #B1B1B1;
+    margin-left: 5px;
+}
+
+
+
+.resources1:hover,.resources2:hover,.resources3:hover
+{
+    opacity: 70%;
+}
+/* I just know this was such a terrible way to do this... PLEASE HELP. */
+#file-details{
+    display: flex;
+    margin-top:15px;
+    margin-left: 15px;
+    border-top:3px solid #595656;
+}
+#other-details{
+    
+    display: flex;
+    margin-top:200px;
+    margin-left: -90px;
+    border-top:3px solid #595656;
+}
+
+summary{
+    width:90px;
+}
+#content{   /* the content flexing is causing the nav bar to stretch when the file menu is closed */ 
+    width:100%;
+    background-color:rgb(255, 179, 255);
+    display:flex;
+    flex-direction: column;
+}
+    #tabs{
+        background-color:#060606;
+        display:flex;
+    }
+        #tabs a{
+            width:173px;
+            height:34px;
+            display:inline-block;
+            border-right: 2px solid black;
+            text-decoration: none;
+            font-size: 18px;
+            color: #b1b1b1;
+        }
+        #tabs a:link, #tabs a:visited{
+            background-color:#494949;
+            /* I made this #494949, instead of the planned #373737, since the menu (aside) is #373737, 
+            and the TAB1 button would have blended in with the separate menu, when not active.
+            Making it not look like a "button/tab". */
+            
+        }
+        #tabs a:hover, #tabs a:active{
+            background-color: #161616;
+        }
+    #breadcrumbs{
+        background-color: #161616;
+        min-height: 23px;
+        text-decoration: none;
+    }
+    #breadcrumbs a{
+        text-decoration: none;
+        color: #044C8D;
+    }
+    #breadcrumbs a:hover{
+        opacity: 70%;
+    }
+    textarea{
+        resize:none;
+        width:100%;
+        height:100%;
+        box-sizing: border-box;
+        border:none;
+        outline:none;
+        background-color:#060606;
+        color:rgb(233, 66, 66);
+    }
+footer{
+    min-height:16px;
+    background-color:#0254A0;
+    display: flex;
+}
+
+.hidden{
+    width:0%;
+    padding:0%;
+    transition:width 1s;
+}
+
+/*********************************/ 
+
+.ul
+{
+    list-style-type: none; /* removes the list's bullet points. */ 
+    padding: 5px; /* Gives the list the verticle alignment */ 
+}
+
+#help
+{
+    position: absolute;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.buttons
+{
+    list-style-type: none; /* removes the list's bullet points. */ 
+}
+
+
+
+/* 😠😠😠😠😠😠😠😠😠😠😠😠😡😡😡😡😡😡😠😠😠😠😠😠😠😠😠😠😠😠😠😠😠 */ 
+.butts 
+{
+    list-style-type: none; /* removes the list's bullet points. */ 
+    padding: 5px;
+    position: relative;
+}
+
+#tray
+{
+    position: absolute;
+    top: 1%;
+    left: 5px;
+    text-decoration: none; /* removes ugly purple edges, due to the nature of links */
+    
+}
+#tiles
+{
+    position: absolute;
+    top: 6%;
+    left: 5px;
+    text-decoration: none; /* removes ugly purple edges, due to the nature of links */
+}
+
+#trash
+{
+    position: absolute;
+    top: 95%;
+    left: 7px;
+    text-decoration: none; /* removes ugly purple edges, due to the nature of links */
+}
+
+
+
+.fa-file, .fa-box-archive, .fa-table-cells-large, .fa-fire-flame-curved, .fa-trash-can
+{
+    color: #B1B1B1;
+}
+
+/* Make icons change color when hovered. */
+/* Changing the opacity of the icon gives the visual effect of the color changing, to a lighter version. */
+.fa-file:hover, .fa-box-archive:hover, .fa-table-cells-large:hover, .fa-fire-flame-curved:hover, .fa-trash-can:hover
+{
+    opacity: 0.70;
+    
+}
