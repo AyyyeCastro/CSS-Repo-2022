@@ -15,6 +15,15 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Righteous&display=swap" rel="stylesheet">
+      
+      <!-- Specifically for the links within the cards. Maybe next time create a separate .css file, and reference... Best practice not yet known. -->
+      <style>
+        a {color:#BDCBA4;}
+        a:link { text-decoration: none;}
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:active { text-decoration: none; }
+      </style>
 </head>
 <body>
    <body>
@@ -37,13 +46,15 @@
         <div class="row justify-content-center">
 
           <!-- Slideshow section-->
-          <div class="card-group">
+          <!-- Why place it in columns? I did this so that way the card's respond to a medium format, rather than the default (xs)... 
+            The default was causing an ugly stretch when the window was too small, but not yet mobile threshold.-->
+          <div class="col-md-4">
             <div class="card">
               <img class="card-img-top" src="cards/stats.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Responsive Table of Stats</h5>
                 <p class="card-text">Students were required to demonstrate an understanding of responsive layouts via a table of stats. <a href="https://css-course.netlify.app/w7/index.html">Live view</a></p>
-                <p class="card-text"><small class="text-muted">Github: HERE</small></p>
+                <p class="card-text git-text"><small class="">Github: <a href="https://github.com/AyyyeJae/CSS-Repo-2022/tree/main/w7">HERE</a></small></p>
               </div>
             </div>
             <div class="card">
@@ -51,7 +62,7 @@
               <div class="card-body">
                 <h5 class="card-title">Software Layout</h5>
                 <p class="card-text">Inspired from Visual Studio Code, students were tasked with creating a responsive layout of a similar theme. <a href="https://css-course.netlify.app/w6/index.html">Live view</a></p>
-                <p class="card-text"><small class="text-muted">Github: HERE</small></p>
+                <p class="card-text git-text"><small class="">Github: <a href="https://github.com/AyyyeJae/CSS-Repo-2022/commit/8401e54b20104b7a14f185b4c3267d90e99471ca">HERE</a></small></p>
               </div>
             </div>
             <div class="card">
@@ -59,17 +70,17 @@
               <div class="card-body">
                 <h5 class="card-title">Bio Page With Grids</h5>
                 <p class="card-text">Evolved from the basic biography pages created prior, students were tasked with designing their layouts via Figma, and implementing it live through Grid layouts. <a href="https://css-course.netlify.app/w3/index.html">Live view</a>  </p>
-                <p class="card-text"><small class="text-muted">Github: HERE</small></p>
+                <p class="card-text git-text"><small class="">Github: <a href="https://github.com/AyyyeJae/CSS-Repo-2022/tree/main/w3">HERE</a></small></p>
               </div>
             </div>
           </div>
-          <div class="card-group">
+          <div class="col-md-4">
             <div class="card">
               <img class="card-img-top" src="cards/css-bio.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Multi-Bio Page With CSS</h5>
                 <p class="card-text">Taking it a step further, the bare biography page students created had to be styled with CSS, and utilize multiple pages.<a href="https://css-course.netlify.app/w2/index.html">Live view</a></p>
-                <p class="card-text"><small class="text-muted">Github: HERE</small></p>
+                <p class="card-text git-text"><small class="">Github: <a href="https://github.com/AyyyeJae/CSS-Repo-2022/tree/main/w2">HERE</a></small></p>
               </div>
             </div>
             <div class="card">
@@ -77,7 +88,7 @@
               <div class="card-body">
                 <h5 class="card-title">Hide & Show Divs</h5>
                 <p class="card-text">The beginning of our CSS journey included creating a simple single biography page, while utilizing basic CSS styling, and a hide/show element. <a href="https://css-course.netlify.app/w1/index.html">Live view</a></p>
-                <p class="card-text"><small class="text-muted">Github: HERE</small></p>
+                <p class="card-text git-text"><small class="">Github: <a href="https://github.com/AyyyeJae/CSS-Repo-2022/tree/main/w1">HERE</a></small></p>
               </div>
             </div>
             <div class="card">
@@ -85,12 +96,11 @@
               <div class="card-body">
                 <h5 class="card-title">First Webpage</h5>
                 <p class="card-text">This was the first biography webpage students were assigned to create utilizing basic HTML. You can view my first attempts at learning CSS and interactive elements as well. <a href="http://se111-castro-a-2022.herokuapp.com/w2_bio/">Live view</a> </p>
-                <p class="card-text"><small class="text-muted">Github: HERE</small></p>
+                <p class="card-text git-text"><small class="">Github: <a href="">HERE</a></small></p>
               </div>
             </div>
           </div>
-         
-
+        
         </div>
       </div>
 
@@ -107,3 +117,16 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- Author's notes...-->
+<!-- Working with a framework for the first time (Bootstrap), has taught me a few things...
+1. Bootstrap 5.X is inconsistent in it's stability. Work with established framework versions--- Ex. 4.X
+
+2. Multiple style sheets may be necessary. For example, project.css, home.css, etc... There is too much inconsistency with having my css in the header for specific elements, 
+and having a large style sheet for other elements of the same page.
+
+3. Build with a mobile mentality first, then expand to Desktop format... This is the first website I've designed with that in mind.
+
+4. Continue to design with Figma and Milanote prior to coding. Essential in building the skeleton of the website with an end goal in mind. Helps you know WHAT to google when lost.
+
+5. TEST. TEST. TEST.-->

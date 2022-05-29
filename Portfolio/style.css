@@ -288,7 +288,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
  {
     color: #ffffff !important;
     text-shadow: 2px 2px 5px #000000;
-    background-color: #45485115;
+    background-color: #4548515f;
     border-radius: 10px;
  }
 
@@ -300,16 +300,32 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 /************************************************************************/
 /* ⚠️ PROJECTS.HTML ------ DIFFERENT PAGE. ⚠️ */ 
 
-.card-group
-{
-   padding: 15px;
-}
+
 .card
 {
-   margin: 35px;
+   margin: 15px;
 }
 .card-img-top
 {
    max-height: 25vh;
-   border-bottom: 2px solid black;
+}
+.card-body
+{
+   background-color: #454851;
+   border: 3px solid #303238;
+}
+.card-title
+{
+   color:#BDCBA4;
+   font-family: 'Righteous', cursive;
+}
+.card-text
+{
+   color: white;
+   font-family: 'Chakra Petch', sans-serif;
+}
+
+.git-text
+{
+   text-align: right;
 }
