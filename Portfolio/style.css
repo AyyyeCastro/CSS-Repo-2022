@@ -61,18 +61,19 @@ MIN-HEIGHT is also INCREDIBLY IMPORTANT so that the text inside this container d
 The height will flex above 40vh when needed for browser size. 
 Tutorial: https://youtu.be/_sgF8I-Q1Gs */ 
 
+
+
 /* Background for welcome header */ 
 .welcome-custom{
-   min-height: 100vh;
+   min-height: 30vh;
    /* To the middle you go... NOT GOOD PRACTICE...*/
-   padding: 330px;
    background-image: url(images/welcome-bg.png);
    background-size: cover;
    background-position: bottom center;
    /* Keeps the image CENTER in a static position */ 
    background-attachment:static;
    background-repeat: none;
-   background-color: #ff0000;
+   background-color: #ffffff;
 }
 /* Welcome text */
 .andrew-custom
@@ -85,7 +86,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 .animate-bottom {
    position: relative;
    -webkit-animation-name: animatebottom;
-   -webkit-animation-duration: 2s;
+   -webkit-animation-duration: 3s;
    animation-name: animatebottom;
    animation-duration: s
  }
@@ -99,6 +100,29 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    to{ bottom:0; opacity:1 }
  }
  
+/************************/
+/* column above and below .andrew-custom to vertically center text. */ 
+.above-welcome
+{
+   min-height: 35vh;
+   background-image: url(images/welcome-bg.png);
+   background-size: cover;
+   background-position: bottom center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   background-repeat: none;
+}
+.below-welcome
+{
+   min-height: 35vh;
+   background-image: url(images/welcome-bg.png);
+   background-size: cover;
+   background-position: bottom center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   background-repeat: none;
+}
+
 /************************/
 /* HERO SECTION Character */
 .hero-xiv-custom
@@ -115,6 +139,8 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    background-color: #ff0000;
    background-repeat: none;
 }
+
+
 /************************/
 /* Resume Section */ 
 /* Avatar*/ 
@@ -166,15 +192,12 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    padding: 45px;
 }
 
+/************************/
+/* ACROSS MULTIPLE SCENARIOS */ 
 #h2, .h2-custom
 {
    color: #BDCBA4;
 }
-
-/************************/
-/* ACROSS MULTIPLE SCENARIOS */ 
-
-/* any bold text in body*/
 .bold-custom
 {
    font-family: 'Righteous', cursive;
@@ -233,8 +256,30 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
 /* Featured Project Section */ 
 .tangled-custom{
    background-color: #BDCBA4;
-   min-height: 40vh;
-   padding: 75px;
+   min-height: 10vh;
+}
+
+/************************/
+/* column above and below .tangled-custom to vertically center text. */ 
+.above-te
+{
+   min-height: 15vh;
+   background-image: url(images/welcome-bg.png);
+   background-size: cover;
+   background-position: bottom center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   background-repeat: none;
+}
+.below-te
+{
+   min-height: 15vh;
+   background-image: url(images/welcome-bg.png);
+   background-size: cover;
+   background-position: bottom center;
+   /* Keeps the image CENTER in a static position */ 
+   background-attachment:static;
+   background-repeat: none;
 }
 
 /************************/
@@ -250,6 +295,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    background-color: #ff0000;
    background-repeat: none;
 }
+
 /************************/
 /* Footer Section */ 
 .footer-custom
@@ -275,7 +321,7 @@ Tutorial: https://youtu.be/_sgF8I-Q1Gs */
    padding: 45px;
 }
 
-#h2, .h2-custom2
+.h2-custom2
 {
    color: #454851;
    text-align: center;
